@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playwrite+PL&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Zeyada&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
