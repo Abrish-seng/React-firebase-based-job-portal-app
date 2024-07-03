@@ -16,87 +16,66 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [customSearch, setCustomSearch] = useState(false);
 
-  const fetchJobs = async () => {
+  const fetchJobs = async() => {
     setCustomSearch(false);
-    const tempjobs = [];
-
-    const jobRef = query(collection(db, "jobs"));
-    const q = query(jobRef, orderBy("postedOn", "desc"));
+    const tempJobs = []
+    const jobsRef = query(collection(db, "jobs"));
+    const q = query(jobsRef, orderBy("postedOn", "desc"));
     const req = await getDocs(q);
+
     req.forEach((job) => {
-      // doc.data() is never undefined for query doc snapshots
       // console.log(doc.id, " => ", doc.data());
-      tempjobs.push({
+      tempJobs.push({
         ...job.data(),
         id: job.id,
-        postedOn: job.data().postedOn.toDate(),
-      });
+        postedOn: job.data().postedOn.toDate()
+      })
     });
-    setJobs(tempjobs);
-  };
+    setJobs(tempJobs);
+  }
+
+  const fetchJobsCustom = async(jobCriteria) => {
+    setCustomSearch(true);
+    const tempJobs = []
+    const jobsRef = query(collection(db, "jobs"));
+    const q = query(jobsRef, where("type", "==", jobCriteria.type), where("title", "==", jobCriteria.title), where("exprience", "==", jobCriteria.exprience), where("location", "==", jobCriteria.location) ,orderBy("postedOn", "desc"));
+    const req = await getDocs(q);
+
+    req.forEach((job) => {
+      // console.log(job.id, " => ", job.data());
+      tempJobs.push({
+        ...job.data(),
+        id: job.id,
+        postedOn: job.data().postedOn.toDate()
+      })
+    });
+    console.log(tempJobs)
+    setJobs(tempJobs);
+  }
+
 
   useEffect(() => {
-    fetchJobs();
-  }, []);
+    fetchJobs()
+  },[])
 
-  const fetchJobsCustom = async (jobSearch) => {
-    
-    setCustomSearch(true);
-    const tempjobs = [];
-    // if (!jobSearch.title || !jobSearch.type || !jobSearch.experience || !jobSearch.location) {
-    //   setJobs([]);
-    //   return;
-    // }
-    
-
-    const jobRef = query(collection(db, "jobs"));
-    const q = query(
-      jobRef,
-      where("type", "==", jobSearch.type),
-      where("title", "==", jobSearch.title),
-      where("exprience", "==", jobSearch.exprience),
-      where("location", "==", jobSearch.location),
-      orderBy("postedOn", "desc")
-    );
-    
-   
-    const querySnapshot = await getDocs(q);
-   
-
-    querySnapshot.forEach((doc) => {
-      jobs.push({ id: doc.id, ...doc.data() });
-    });
-
-    // console.log(jobs)
-    setJobs(tempjobs);
-
-  };
-
-  // useEffect(() => {
-  //   fetchJobs();
-  // }, []);
 
   return (
-    <div className="App">
+    <div>
+      <Home />
       
-      {/* <Login/> */}
-      <Home/>
-      
-      <SearchBar onData={fetchJobsCustom} />
-      {customSearch && (
-        <button onClick={fetchJobs} className="flex pl-[1000px] mb-3 ">
-          <p className="bg-blue-500 px-5 py-4 rounded-md text-white cursor-pointer">
-            Clear Filters
-          </p>
+      <SearchBar fetchJobsCustom={fetchJobsCustom}/>
+      {customSearch && 
+        <button onClick={fetchJobs} className="flex pl-[1000px] mb-2">
+          <p className="bg-blue-500 px-10 py-2 rounded-md text-white">Clear Filters</p>
         </button>
-      )}
-      {jobs.map((job) => (
-        <JobCards key={job.id} {...job} />
+      }
+      {jobs.map((job)=> (
+        <JobCards key={job.id} {...job}/>
       ))}
       <Service/>
       <AboutUs/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

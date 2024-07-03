@@ -6,7 +6,7 @@ export default function JobCards(props) {
   const day1 = dayjs(Date.now());
   const daydiff = day1.diff(props.postedOn, "day");
   return (
-    <div className="flex items-center bg-zinc-50 shadow-lg mx-40 mb-4 justify-between rounded-lg border-solid border-2">
+    <div className="flex items-center bg-zinc-50 shadow-lg mx-60 mb-4  justify-between rounded-lg border-solid border-2">
       <div className="ml-5 my-3">
         <h3 className="font-semibold">
           {props.title}-{props.company}
