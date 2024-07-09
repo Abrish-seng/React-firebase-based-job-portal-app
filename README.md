@@ -1,6 +1,6 @@
 # React and firebase based job portal application
 
-#  Tell a story about yourself which relates to why you chose to work on this project
+### Tell a story about yourself which relates to why you chose to work on this project
 Growing up in a city where job postings were still done the old-fashioned way—pinned on bulletin boards or shared in Telegram groups—I always felt there was a more efficient method to connect job seekers and employers. As a budding software engineer with a passion for React, Tailwind CSS, and Firebase, I saw an opportunity to bring a modern solution to my community.
 
 A few years ago, a close friend of mine was desperately looking for a job. Despite having the right qualifications, he struggled to find suitable opportunities simply because the information was so scattered and outdated. This experience made me realize the need for a centralized, user-friendly platform that could streamline the job search process.
