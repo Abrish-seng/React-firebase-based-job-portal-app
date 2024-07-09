@@ -11,6 +11,7 @@ import Login from '../src/components/login/Login'
 import Try from "./components/register/try";
 import AboutUs from "./components/aboutus/AboutUs";
 import Service from "./components/service/Service";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -61,7 +62,14 @@ function App() {
 
   return (
     <div>
-      <Home />
+      
+      <BrowserRouter>
+      <Home/>
+      <Routes>
+      {/* <Route path="/" element={<Home />} /> */}
+      <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
       
       <SearchBar fetchJobsCustom={fetchJobsCustom}/>
       {customSearch && 

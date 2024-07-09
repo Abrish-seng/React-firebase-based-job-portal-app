@@ -6,15 +6,8 @@ import {useNavigate} from 'react-router-dom'
 import './home.css'
 import Login from './login/Login';
 function Home(){
-  const handleLoginClick = () => {
-    // Handle navigation to Login component (e.g., using React Router)
-    // const navigate = useNavigate();
-    // navigate('/Login');
-  };
+  const navigate = useNavigate()
 
-  const handleRegisterClick = () => {
-    // Handle navigation to Signup section of Login component (optional)
-  };
   return(
     <div>
      <div className='bg-neutral-200'>
@@ -28,8 +21,8 @@ function Home(){
       </ul>
       </div>
      <div className='flex justify-center items-center '>
-      <button className='mx-7 font-quentiessential text-xl border-2 border-blue-500 px-4 py-1 rounded-full' onClick={handleLoginClick}>Login</button>
-      <button className='mx-7 font-quentiessential text-xl bg-red-400 px-4 py-1 rounded-full' onClick={handleRegisterClick}>Register</button>
+      <button className='mx-7 font-quentiessential text-xl border-2 border-blue-500 px-4 py-1 rounded-full' onClick={() => navigate('login')}>Login</button>
+      <button className='mx-7 font-quentiessential text-xl bg-red-400 px-4 py-1 rounded-full' >Register</button>
       <h3 className='mx-7 font-quentiessential text-xl'>About us</h3>
      </div>
     
@@ -37,10 +30,10 @@ function Home(){
       
      </div>
      
-     <div className="container">
+     {/* <div className="container">
         <h3 className='text-6xl font-quent'>Find your Dream Job</h3>
         <h3 className='text-2xl mt-4 font-playwrite'>Jobs for you to Explore</h3>
-     </div>
+     </div> */}
      </div>
   );
 }
