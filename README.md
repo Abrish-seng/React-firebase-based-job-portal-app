@@ -16,13 +16,18 @@ Working on this project is not just about honing my technical skills—it's abou
 ### Client Side (React JS + Tailwind CSS)
 
 `Login/Registration`: Users input their credentials which are sent to Firebase Authentication.
-Job Listings: Users can view and filter job listings stored in Firebase Firestore.
-Job Application: Job seekers can apply for jobs, and the application data is sent to Firestore.
-Server Side (Firebase)
+
+`Job Listings`: Users can view and filter job listings stored in Firebase Firestore.
+
+`Job Application`: Job seekers can apply for jobs, and the application data is sent to Firestore.
+
+### Server Side (Firebase)
 
 `Firebase Authentication`: Manages user authentication and authorization.
-Firebase Firestore: Stores job listings, user profiles, and applications.
-Firebase Cloud Functions: Handles server-side logic such as sending notifications and processing data.
+
+`Firebase Firestore`: Stores job listings, user profiles, and applications.
+
+`Firebase Cloud Functions`: Handles server-side logic such as sending notifications and processing data.
 External Integrations
 
 `Email Notifications`: Through Cloud Functions, emails are sent to users for various actions (e.g., application confirmations).
@@ -30,6 +35,7 @@ Summary of Technologies Used
 ### Frontend:
 
 `React JS`: We chose React for its component-based architecture, which allows for reusable UI components and efficient state management. React's virtual DOM enhances performance, making it suitable for dynamic job listings.
+
 `Tailwind CSS`: Tailwind CSS was selected for its utility-first approach, enabling rapid UI development with consistent design. It allows for highly customizable and responsive layouts without writing custom CSS.
 ### Backend:
 
@@ -37,6 +43,7 @@ Summary of Technologies Used
 ### Why These Choices?
 
 `React JS and Tailwind CSS`: This combination provides a powerful and flexible way to create modern, responsive user interfaces quickly. React's ecosystem and community support were additional factors.
+
 `Firebase`: It offers a comprehensive backend-as-a-service (BaaS) solution, reducing the need for complex infrastructure management. Its real-time data syncing and out-of-the-box authentication services speed up development.
 ## Overview of Completed Features
 1. ### Job Filtering System
