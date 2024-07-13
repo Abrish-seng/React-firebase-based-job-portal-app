@@ -1,6 +1,7 @@
 import React from "react";
 import dayjs from "dayjs";
-
+import { Link } from "react-router-dom";
+import ApplicationForm from "../../ApplicationForm";
 export default function JobCards(props) {
   // const skills = ["Javascript", "React", "nodejs"];
   const day1 = dayjs(Date.now());
@@ -27,14 +28,14 @@ export default function JobCards(props) {
       </div>
       <div className="flex flex-row gap-6 items-center">
         <p>Posted {daydiff > 1? `${daydiff} days` : `${daydiff} day`} ago</p>
-        <a href={props.link}>
+        <Link to="/applicationForm">
           <button
             type="button"
             className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
           >
             Apply
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
