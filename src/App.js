@@ -12,6 +12,8 @@ import Try from "./components/register/try";
 import AboutUs from "./components/aboutus/AboutUs";
 import Service from "./components/service/Service";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RelatedCompany from "./components/company/RelatedCompany";
+import CompanyPost from "./components/company/CompanyPost";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -62,15 +64,7 @@ function App() {
 
   return (
     <div>
-      
-      <BrowserRouter>
       <Home/>
-      <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
-      <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-      
       <SearchBar fetchJobsCustom={fetchJobsCustom}/>
       {customSearch && 
         <button onClick={fetchJobs} className="flex pl-[1000px] mb-2">
@@ -81,7 +75,11 @@ function App() {
         <JobCards key={job.id} {...job}/>
       ))}
       <Service/>
+      <CompanyPost/>
       <AboutUs/>
+      
+
+
     </div>
   )
 }

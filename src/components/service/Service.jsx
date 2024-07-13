@@ -3,7 +3,7 @@ import logo3 from '../../assets/logo4.jpg'
 import home from '../home.css'
 export default function Service() {
   return (
-    <div className='flex justify-around items-center bg-gray-50 mt-20'>
+    <div className='flex justify-around items-center bg-gray-50 mt-20' id='service'>
         <img src={logo3} alt="" className='logo-3' />
         <div className=' flex items-center justify-around tech-hub'>
         <div>

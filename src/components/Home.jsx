@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../assets/job-logo-symbol-vector-design.jpg'
 import profile from '../assets/profile.jpg'
-import videoBg from '../assets/videobg.mp4' 
 import {useNavigate} from 'react-router-dom'
 import './home.css'
 import Login from './login/Login';
@@ -16,14 +15,14 @@ function Home(){
       <img src={logo} className='w-20 h-20  rounded-full' alt=''/>
       <ul className='flex justify-center items-center mx-7'>
         <li className='mx-7 font-quentiessential text-xl'><a href="">Jobs</a></li>
-        <li className='mx-7 font-quentiessential text-xl'><a href="">Companies</a></li>
-        <li className='mx-7 font-quentiessential text-xl'><a href="">Services</a></li>
+        <li className='mx-7 font-quentiessential text-xl'><a href="#company">Companies</a></li>
+        <li className='mx-7 font-quentiessential text-xl'><a href="#service">Services</a></li>
       </ul>
       </div>
      <div className='flex justify-center items-center '>
       <button className='mx-7 font-quentiessential text-xl border-2 border-blue-500 px-4 py-1 rounded-full' onClick={() => navigate('login')}>Login</button>
       <button className='mx-7 font-quentiessential text-xl bg-red-400 px-4 py-1 rounded-full' >Register</button>
-      <h3 className='mx-7 font-quentiessential text-xl'>About us</h3>
+      <a href="#aboutus"><h3 className='mx-7 font-quentiessential text-xl'>About us</h3></a>
      </div>
     
       </div>

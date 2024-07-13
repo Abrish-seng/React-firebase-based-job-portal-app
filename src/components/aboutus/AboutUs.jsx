@@ -8,7 +8,7 @@ import jobsearch from '../../assets/jobsearch.jpg'
 import logo2 from '../../assets/log2.jpg'
 export default function AboutUs() {
   return (
-    <div className='mt-20 border-t-4'>
+    <div className='mt-20 border-t-4' id='aboutus'>
         <div className='flex  justify-around items-center  mb-10 mt-10'>
         <div>
         <img src={logo2} alt="" className='w-12 h-12' />
