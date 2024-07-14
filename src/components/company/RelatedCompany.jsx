@@ -24,7 +24,7 @@ export default function RelatedCompany() {
         <p className='ml-10 font-zeyada'>{company.slogan}</p>
     </div>
     <div>
-        <button className='ml-10 font-quentiessential text-xl bg-blue-100 px-4 py-1 rounded-full'>View Jobs</button>
+        <button className='ml-10 font-quentiessential text-xl bg-blue-100 hover:bg-blue-400 focus:ring-4 px-4 py-1 rounded-full'>View Jobs</button>
     </div>
   </div>
    ))}

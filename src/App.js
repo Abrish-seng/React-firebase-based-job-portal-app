@@ -6,9 +6,6 @@ import JobCards from "./components/jobCards/JobCards";
 // import JobData from "./components/jobCards/JobData";
 import { db } from "./firebase.config";
 import { collection, query, where, getDocs, orderBy } from "firebase/firestore";
-import Register from '../src/components/register/Register'
-import Login from '../src/components/login/Login'
-import Try from "./components/register/try";
 import AboutUs from "./components/aboutus/AboutUs";
 import Service from "./components/service/Service";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

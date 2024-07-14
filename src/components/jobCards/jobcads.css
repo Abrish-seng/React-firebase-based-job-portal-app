@@ -1,0 +1,11 @@
+@media only screen and (max-width: 998px) {
+    .job-cards {
+      margin-left: 100px;
+    }
+  }
+  @media only screen and (max-width: 914px) {
+    .job-cards {
+      margin-left: 50px;
+    }
+  }
+ 

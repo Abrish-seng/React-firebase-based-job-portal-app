@@ -2,3 +2,18 @@
     width: 120px;
     height: 90px;
 }
+.company-try{
+    margin-left: 200px;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 970px) {
+    .company-try {
+      margin-left: 50px;
+    }
+  }
+  @media only screen and (max-width: 730px) {
+    .company-try {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }

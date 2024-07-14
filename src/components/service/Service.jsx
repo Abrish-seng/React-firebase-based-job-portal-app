@@ -11,7 +11,7 @@ export default function Service() {
             <p className='font-quentiessential'>Discover powerful tools & tips that help you  </p>
             <p className='font-quentiessential'>prepare for every stage of your career</p>
         </div>
-        <button className='border-2 rounded-full btn bg-blue-500 py-2'>Start Exploring</button>
+        <button className='border-2 rounded-full hover:bg-blue-700 btn bg-blue-500 py-2'>Start Exploring</button>
         </div>
     </div>
   )
