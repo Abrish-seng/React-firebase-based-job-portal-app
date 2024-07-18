@@ -12,7 +12,7 @@ function Home(){
       <div className='flex justify-center items-center'>
       <img src={logo} className='w-20 h-20  rounded-full' alt=''/>
       <ul className='flex justify-center items-center nav'>
-        <li className='mx-7 font-quentiessential text-xl'><a href="">Jobs</a></li>
+        <li className='mx-7 font-quentiessential text-xl'><a href="#">Jobs</a></li>
         <li className='mx-7 font-quentiessential text-xl'><a href="#company">Companies</a></li>
         <li className='mx-7 font-quentiessential text-xl'><a href="#service">Services</a></li>
       </ul>

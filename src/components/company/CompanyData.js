@@ -1,4 +1,4 @@
-import { faImages } from '@fortawesome/free-regular-svg-icons'
+
 import hyperlink from '../../assets/hyperlink infosystem.png'
 import safari from '../../assets/safari.png'
 import addisSoftware from '../../assets/addisSoftware.png'
