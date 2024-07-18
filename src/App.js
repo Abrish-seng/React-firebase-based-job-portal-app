@@ -8,8 +8,6 @@ import { db } from "./firebase.config";
 import { collection, query, where, getDocs, orderBy } from "firebase/firestore";
 import AboutUs from "./components/aboutus/AboutUs";
 import Service from "./components/service/Service";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RelatedCompany from "./components/company/RelatedCompany";
 import CompanyPost from "./components/company/CompanyPost";
 
 function App() {

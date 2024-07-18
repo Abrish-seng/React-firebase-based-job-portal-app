@@ -1,6 +1,5 @@
 import React from 'react'
 import logo3 from '../../assets/logo4.jpg'
-import home from '../home.css'
 export default function Service() {
   return (
     <div className='flex justify-around items-center bg-gray-50 mt-20' id='service'>
