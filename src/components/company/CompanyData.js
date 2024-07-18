@@ -2,7 +2,7 @@
 import hyperlink from '../../assets/hyperlink infosystem.png'
 import safari from '../../assets/safari.png'
 import addisSoftware from '../../assets/addisSoftware.png'
-export default [
+const companyList= [
     {
         id:1,
         image:hyperlink,
@@ -27,4 +27,5 @@ export default [
         slogan:'Digital transformation and service provider.',
         review: '44.8k Reviews'
     },
-]
+];
+export default companyList;
