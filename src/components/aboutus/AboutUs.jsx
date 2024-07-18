@@ -15,10 +15,10 @@ export default function AboutUs() {
         <div>
             <h3 className='font-zeyada font-bold text-xl'>Contact with us</h3>
             <ul className='flex '>
-                <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li className='ml-3 mr-3'><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                <li className='mr-3'><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li><a href="https://www.instagram.com/abrish814/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li className='ml-3 mr-3'><a href="https://www.facebook.com/profile.php?id=100005940226935"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                <li className='mr-3'><a href="https://x.com/Abrish72259499"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                <li><a href="https://x.com/Abrish72259499"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
         </div>
         </div>
