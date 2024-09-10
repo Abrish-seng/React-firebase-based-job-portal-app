@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MdMenu, MdClose } from 'react-icons/md'; // Assuming Material Design icons
+import { MdClose } from 'react-icons/md'; // Assuming Material Design icons
 import MenuButton from './MenuButton';
 import { Link } from 'react-router-dom';
 import '../components/home.css'
