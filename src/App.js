@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Home from "./components/Home";
 import SearchBar from "./components/searchBar/SearchBar";
 import JobCards from "./components/jobCards/JobCards";
 // import JobData from "./components/jobCards/JobData";
@@ -9,6 +8,7 @@ import { collection, query, where, getDocs, orderBy } from "firebase/firestore";
 import AboutUs from "./components/aboutus/AboutUs";
 import Service from "./components/service/Service";
 import CompanyPost from "./components/company/CompanyPost";
+import Navbar from "./navbar/Navbar";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div>
-      <Home/>
+      <Navbar/>
       <SearchBar fetchJobsCustom={fetchJobsCustom}/>
       {customSearch && 
         <button onClick={fetchJobs} className="flex pl-[1000px] mb-2">

@@ -8,7 +8,7 @@ export default function JobCards(props) {
   const daydiff = day1.diff(props.postedOn, "day");
   return (
     <div className="flex job-cards items-center bg-zinc-50 shadow-lg mx-60 mb-4  justify-between rounded-lg border-solid border-2">
-      <div className="ml-5 my-3">
+      <div className="ml-5 my-3 ">
         <h3 className="font-semibold">
           {props.title}-{props.company}
         </h3>

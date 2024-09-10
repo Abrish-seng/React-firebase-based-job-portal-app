@@ -8,4 +8,30 @@
       margin-left: 50px;
     }
   }
+  @media only screen and (max-width: 768px) {
+    .job-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
  
+  @media only screen and (max-width: 768px) {
+    .job-cards {
+      margin-right: 100px;
+      margin-left: 100px;
+      
+    }
+  }
+  @media only screen and (max-width: 549px) {
+    .job-cards {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+  @media only screen and (max-width: 472px) {
+    .job-cards {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
